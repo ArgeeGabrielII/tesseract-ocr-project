@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+    <html lang="en"></html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+    <body>
+        <form action="/extracttextfromimage" method="post" enctype="multipart/form-data">
+            <label for="file">Upload Image File:</label>
+            <input type="file" name="file" accept="image/*" required id="">
+            <button>Submit</button>
+        </form>
+
+        <textarea cols="40" rows="40">
+            <%=data%>
+        </textarea>
+    </body>
+</html>
